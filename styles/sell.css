@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sect-1-con{
+    background-color: white;
+    height: 25vh;
+
+}
+.sect-1-con h1{
+    font-size: 47px;
+    font-weight: 700;
+}
+.card-title{
+    font-size: 50px;
+    font-weight: 700;
+}
+.card-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* end of sect-1 */
+
+.card-titlei{
+    font-size: 15px;
+    font-weight: 700;
+}
+.card-texti{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+@media(max-width:767.5px){
+    #sec-four{
+        background-color: black;
+        /* justify-content: center; */
+       
+    }
+    #sec-four h5{
+        justify-content: center;
+        color: white;
+        font-size: 40px;
+        padding-left: 40px;
+    }
+    #sec-four .btn{
+       margin-left: 190px;
+       background-color: white;
+    }
+
+}
+@media(max-width:575.5px){
+    .sect-1{
+        display: none;
+    }
+
+
+    #sec-one-in img{
+        display: none;
+
+    }
+    #sec-one-in2 div{
+        text-align: center;
+    }
+    #sec-one-in2 div h2{
+        font-size: 18px;
+        font-weight: 700;
+        color: #4e4e4e;
+    }
+    #sec-one-in2 div p{
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 5px;
+
+    }
+
+
+
+    #sec-four{
+        background-color: black;
+        /* justify-content: center; */
+       
+    }
+    #sec-four h5{
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    #sec-four .btn{
+       margin-left: 60px;
+       background-color: rgb(223, 212, 19);
+    }
+
+}

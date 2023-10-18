@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sell on konga</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/sell.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(242,242,242);">
+  <!-- ALERT -->
+  <!-- navbar-hidden -->
+  <nav class="navbar navbar-dark bg-white fixed-top" id="navbar-hidden">
+    <div class="container-fluid ">
+      <button class="navbar-toggler bg-dark " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href=""><span><i class="bi bi-house-down-fill"></i></span>
+        <span><i class="bi bi-geo-alt"></i></span></a>
+      
+      
+      
+      <div class="offcanvas  offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><span><i class="bi bi-house-down-fill"></i></span>
+          <span><i class="bi bi-geo-alt"></i></span></h5>
+        </div>
+
+        
+
+
+
+
+
+
+        <div class="offcanvas-body" id="body-hidden">
+          <div class="d-flex  col-12  mx-auto">
+            <button class="btn  " type="button">Login</button>
+            <button class="btn  " type="button">Signup</button>
+          </div>
+          <div class="bady">
+            <div class="body-link">
+              <i class="bi bi-geo-alt"></i>
+              <span style="margin-left: 10px;"><span> Track Orders</span> <p> view order status</p></span>
+            </div>
+            <div class="body-link">
+              <i class="bi bi-geo-alt"></i>
+              <span style="margin-left: 10px;"> Pending Items</span>
+            </div>
+            <div class="body-link">
+              <i class="bi bi-geo-alt"></i>
+              <span style="margin-left: 10px;"><span> Track Orders</span> <p> view order status</p></span>
+            </div>
+            <div class="body-link">
+              <i class="bi bi-geo-alt"></i>
+              <span style="margin-left: 10px;"><span> Track Orders</span> <p> view order status</p></span>
+            </div>
+          </div>
+          
+          
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="search-inner w-100">
+        <form class="container-fluid mt-3 " id="search">
+          <div class="input-group ">          
+            <input type="text" class="form-control" placeholder="search for products, brands and categories... " aria-label="Username" aria-describedby="basic-addon1">
+            <a href="#"><span class="input-group-text bg-warning rounded-1" id="basic-addon1"><i class="bi bi-search "></i></span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="header4-inner">
+      <nav>
+        <a href="">
+          <i class="bi bi-dash-circle-dotted ms-3"></i><br><span>
+            Browse All
+          </span>
+  
+        </a>
+        <a href="">
+          <i class="bi bi-person-standing-dress ms-3"></i><br>
+          <span>
+            Fashion
+          </span>
+        </a>
+        <a href="">
+          <i class="bi bi-laptop ms-3"></i><br> <span>
+            computer
+          </span>
+  
+        </a>
+        <a href="">
+          <i class="bi bi-phone ms-3"></i><br><span>
+            phones
+          </span>
+  
+        </a>
+        <a href="">
+          <i class="bi bi-send-arrow-up ms-3"></i><br><span>
+            All deals
+          </span>
+  
+        </a>
+      </nav>
+    </div>         
+    
+
+    
+  </nav>
+
+
+
+  <div class="container-fluid ">
+    <div class="alert h-5 alert-dismissible  fade show" role="alert" id="first-header">
+      <a href="#"><img src="../create-setup/create-images/oct 1.webp" alt="" ></a>
+      
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-end hide" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header w-100">
+        <span>
+          <h5 class="offcanvas-title " id="offcanvasLabel"></i>Login</h5>
+        </span>
+        <button type="button" class="btn-close border-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        
+        
+        
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address or Phone Number</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your emailor number with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password" id="exampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-success w-100 rounded-0">Login</button>
+          <hr>
+            <a class="btn border-primary w-100" href="">Login with Google</a>
+        </form>
+        <div class="offcanvas-footer text-center w-100">
+           
+          <a href="">Don’t have an account? Sign Up</a>
+          
+          
+          
+        </div>
+      </div>
+  </div>
+  <!-- START OF HEADER -->
+  <!-- header 2 begins -->
+  <header class="main-header">
+    <div class="container-fluid" id="header2">
+      <ul class="nav justify-content-center" id="list-link">
+          <li class="nav-item">
+          <a class="nav-link" href="#"><img src="./landing-images/IMAGES/k_travels2.webp" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./landing-images/IMAGES/konga_pay.webp" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./landing-images/IMAGES/new_konga_drinks.webp" alt=""></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#"><img src="./landing-images/IMAGES/konga_health.webp" alt=""></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#"><img src="./landing-images/IMAGES/k_express2.webp" alt=""></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#"><img src="./landing-images/IMAGES/new_konga_groceries.webp" alt=""></a>
+          </li>
+      </ul>              
+    </div>
+    <!-- HEADER-3-START -->
+    <div >      
+      <nav class="navbar navbar-expand-lg "id="header3" >
+        <div class="container-fluid "id="header3-con">
+          <a class="navbar-brand" href="../index.html"><img src="./landing-images/IMAGES/62f8a0d88e07573b4d46735aa24f3f04.png" style="width: 8rem;" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"         id="navbarSupportedContent">
+            <ul class="navbar-nav   ">
+              <li class="nav-item w-25">
+                <a class="nav-link active" aria-current="page" href="#">store locator</a>
+              </li>
+              <li class="nav-item  w-25 ">
+                <a class="nav-link" href="../sell-on-konga/sell.html">sell on konga</a>
+              </li>                
+              
+              <form class="container-fluid mt-3 " id="search">
+                <div class="input-group ">          
+                  <input type="text" class="form-control " placeholder="search for products, brands and categories... " aria-label="Username" aria-describedby="basic-addon1">
+                  <a href="#"><span class="input-group-text bg-warning rounded-1" id="basic-addon1"><i class="bi bi-search "></i></span></a>
+                </div>
+              </form>
+              <li class="nav-item dropdown p-3 w-25  ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><i class="bi bi-question-circle"></i></span> Help
+                </a>
+                <ul class="dropdown-menu bg-white" style="width: 200px;">
+                  <li><a class="dropdown-item text-dark" href="#">FAQS</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">track My Order</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Konga Return Policy</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Konga Return Policy</a></li>
+                </ul>
+              </li>
+              <li class="nav-item w-25  mb-2 ">
+                <a class="btn " data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasExample">
+                 Login / signup
+                </a>
+                
+              </li>   
+              <button 
+                class="btn btn-outline-success bg-success text-white w-25 m-2" type="submit">
+                <span><i class="bi bi-cart-dash"></i></span> my<br> cart
+              
+              </button>
+            </ul>          
+          
+          </div>
+        </div>
+      </nav>
+    
+  </div> 
+  <!-- HEADER-4-START  -->
+  <div class="header4">
+    <nav class="header4-con">
+      <ul>
+        <li class="box "><a href="">All Categories <span> <strong><i class="bi bi-list"></i></strong> </span></a></li>
+        <li class="box "><a href="../computer-and-Accessory/computer.html">Computers and Accessories</a></li>
+        <li class="box"><a href="">Phones and Tablets</a></li>
+        <li class="box"><a href="">Electronics</a></li>
+        <li class="box"><a href="">Konga Fashion</a></li>
+        <li class="box"><a href="">Home and Kitchen</a></li>
+        <li class="box"><a href="">Baby, Kids and Toys</a></li>
+        <li class="box"><a href="">Other Categories</a></li>
+      </ul>
+    </nav>
+    
+  </div> 
+                                       
+
+
+  </header>
+
+
+    <!-- END OF HEADER -->
+  
+
+
+
+    <section class="sect-1">
+      <div class="sect-1-con">
+          <p  style="font-size: 12PX;">Home > <a href=""><span style="color: rgb(154,0,121); font-size: 12PX;">sell on konga</span></a></p>
+          <h1>Sell on Konga</h1>
+
+      </div>
+  
+  </section> 
+
+
+
+    <div class="card mb-3 mt-3" style="max-width: 100%;">
+        <div class="row g-0 p-5">
+          <div class="col-md-4" id="sec-one-in">
+            <img src="../sell-on-konga/sell-images/sell-on-konga.webp" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8" id="sec-one-in2">
+            <div class="card-body">
+              <h2 class="card-title">Grow your business online</h2>
+              <p class="card-text pt-5">Reach millions of buyers in every state in Nigeria easily, get your store on Konga today!</p>
+              <a href="../create-setup/create.html" class="btn btn-outline-danger mt-3">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+
+      <div class="card bg-white text-center">
+        <h1 class="card-header border-bottom-0 bg-white">
+            Why Sell on Konga?
+        </h1>
+        <div class="card-body">
+          
+            <div class="card-group ">
+                <div class="card border-top-0 border-start-0 border-end-0 border-bottom-0">
+                  <img style="padding-left: 60px;" src="../sell-on-konga/sell-images/online-payment1.webp" class="card-img-top w-50" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-titlei">Earn More Money</h5>
+                    <p class="card-texti">Konga is one of the largest websites in Nigeria. Sell to over 50 million buyers across every state in Nigeria</p>
+                    
+                  </div>
+                </div>
+                <div class="card border-top-0 border-start-0 border-end-0 border-bottom-0">
+                  <img  style="padding-left: 60px;" src="../sell-on-konga/sell-images/megaphone.webp" class="card-img-top w-50 " alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-titlei">Communication is Easy</h5>
+                    <p class="card-texti">We make it easy to exchange messages with buyers who may have questions.
+                  </div>
+                </div>
+                <div class="card border-top-0 border-start-0 border-end-0 border-bottom-0">
+                  <img  style="padding-left: 60px;" src="../sell-on-konga/sell-images/calculator.webp" class="card-img-top w-50" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-titlei">Low Commissions</h5>
+                    <p class="card-texti">Commission fees are as low as 3%, and you only pay when you successfully sell your product.</p>
+                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card border-top-0 border-start-0 border-end-0 border-bottom-0">
+                  <img  style="padding-left: 60px;" src="../sell-on-konga/sell-images/question.webp" class="card-img-top w-50" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-titlei">You Have Our Support 24/7</h5>
+                    <p class="card-texti">Konga provides various tools to increase your success including: our online SellerHQ and our dedicated merchant support teams.</p>
+                    
+                  </div>
+                </div>
+                <div class="card border-top-0 border-start-0 border-end-0 border-bottom-0">
+                  <img  style="padding-left: 60px;" src="../sell-on-konga/sell-images/online-shop.webp" class="card-img-top w-50" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-titlei">You’re in Control</h5>
+                    <p class="card-texti">TYou choose the price for your return policy, your delivery method on paid orders, and other important options.</p>
+                    
+                  </div>
+                </div>
+                <div class="card border-top-0 border-start-0 border-end-0 border-bottom-0">
+                  <img  style="padding-left: 60px;" src="../sell-on-konga/sell-images/safe.webp" class="card-img-top w-50" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-titlei">We Make Sure It’s Safe</h5>
+                    <p class="card-texti">Konga is the safest and most trusted platform to buy and sell online in Nigeria. We’ve built a community that takes safety & security seriously for both buyers and sellers.</p>
+                    
+                  </div>
+                </div>
+              </div>
+
+
+
+
+        </div>
+       
+      </div>
+      <section>
+        <div class="card mb-5 mt-3 p-5" style="max-width:100%;" id="sec-four">
+            <div class="row g-0 mt-3">
+             
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Earn Money, Hassle Free</h5>
+                  <a href="#" class="btn btn-outline-danger mt-3">Register Now</a>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../sell-on-konga/sell-images/electronics.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="sec-13">
+          <div class="sec-13-con ">
+            <div class="ch">
+              <span>
+                <i class="bi bi-envelope"></i>
+              </span>
+              <div><p>EMAIL SUPPORT</p>
+                <a class="navbar-brand" href="#">help@konga.com</a>
+              </div>
+            </div>
+
+            <div class="ch">
+              <span>
+                <i class="bi bi-telephone-fill"></i>
+              </span>
+              <div>
+                <p>PHONE SUPPORT
+              </p>
+                <a class="navbar-brand" href="#">0708 063 5700, 01 888 3435</a>
+              </div>
+            </div>
+            
+            <div class="ch">
+              <span>
+                <i class="bi bi-whatsapp"></i>
+              </span>
+              <div><p>WHATSAPP</p>
+                <a class="navbar-brand" href="#">0907 0038 400, 0809 460 5555</a>
+              </div>
+            </div>
+            
+            <form class="d-flex me-0 mt-3 mb-3" role="search">
+              <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn bg-danger me-0" type="submit">Search</button>
+            </form>
+
+            
+            
+           
+            
+           
+          </div>
+
+          
+          
+           
+
+              
+
+
+
+           
+          
+        </div>
+        <div class="wrap">
+          <div class="iwrap gap-2">
+            <nav>
+              <ul>
+                <li><a href="">ABOUT KONGA</a>
+                  <div class="iwrap-inner mt-3">
+                    <div><a href="">Contact Us</a></div>
+                    <div><a href="">About Us</a></div>
+                    <div><a href="">Careers</a></div>
+                    <div><a href="">Our Blog</a></div>
+                    <div><a href="">Forum</a></div>
+                    <div><a href="">Terms & Conditions</a></div>
+                  </div>
+                
+                </li>
+                <li><a href="">PAYMENT</a>
+                  <div class="iwrap-inner mt-3">
+                    <div><a href="">KongaPay
+                    </a></div>
+                    <div><a href="">Wallet</a></div>
+                    <div><a href="">Verve</a></div>
+                    <div><a href="">Mastercard</a></div>
+                    <div><a href="">Visa</a></div>
+                  </div>
+                  
+                </li>
+                <li><a href="">BUYING ON KONGA</a>
+                  <div class="iwrap-inner mt-3">
+                    <div><a href="">Buyer Safety Centre</a></div>
+                    <div><a href="">FAQs
+                    </a></div>
+                    <div><a href="">Delivery</a></div>
+                    <div><a href="">Konga Return Policy</a></div>
+                    <div><a href="">Digital Services</a></div>
+                    <div><a href="">Bulk Purchase</a></div>
+                    
+                  </div>
+                  
+                
+                </li>
+                <li><a href="">MORE INFO</a>
+                  <div class="iwrap-inner mt-3">
+                    <div><a href="">Site Map</a></div>
+                    <div><a href="">Track My Order</a></div>
+                    <div><a href="">Privacy Policy</a></div>
+                    <div><a href="">Authentic Items Policy</a></div>
+                    
+                  </div>
+                  
+                
+                </li>
+                <li><a href="">MAKE MONEY ON KONGA</a>
+                  <div class="iwrap-inner mt-3">
+                    <div><a href="">Become a Konga Affiliate</a></div>
+                    
+                  </div>
+                
+
+              </ul>
+
+            </nav>
+            <div class="iiwrap mt-3  ">
+              <h3 style="font-size: 15px; color: rgb(181,181,181);">DOWNLOAD & CONNECT WITH US</h3>
+              <div class="2-wrap-1 d-flex mt-3 gap-1">
+                <a href="">
+                  <div class="andriod d-flex">
+                    <span>
+                      <i class="bi bi-android2 "></i>
+                    </span>
+                    <div class="andriod1">
+                      <p>Download on</p>
+                      <a class="navbar-brand" href="#">Google Play</a>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="apple d-flex">
+                    <span>
+                      <i class="bi bi-apple"></i>
+                    </span>
+                    <div>
+                      <p>Download on</p>
+                      <a class="navbar-brand" href="#">App store</a>
+                    </div>
+                  </div>
+                </a>
+              </div><br>
+              <strong style="font-size: 15px;">CONNECT WITH US</strong>
+              <br><br>
+              <div class="logo">
+                
+                <div>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                </div>
+                <div>
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                </div>
+                <div>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <div>
+                  <a href=""><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+          
+        </div>
+        <div class="base">
+          <h3 class="title">Copyright © 2023 Konga.com. All rights reserved</h3>
+        </div>
+
+        <div class="base-inner">
+          <nav>
+            <ul>
+              <li><a href=""><i class="bi bi-house-door"></i></a><br>Home</li>
+              <li><a href=""><i class="bi bi-tag"></i></a><br>Deals</li>
+              <li><a href=""><i class="bi bi-cart-check"></i></a> <br>Cart</li>
+              <li>
+                <a href="">
+                <i class="bi bi-bar-chart"></i>
+                </a><br>More
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        
+       
+      </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

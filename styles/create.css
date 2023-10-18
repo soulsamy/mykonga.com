@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(21,37,56);
+  
+}
+#navbarTogglerDemo02{
+    background-color: rgb(21,37,56);
+    
+    /* border: 2px solid red; */
+    
+    
+}
+
+.nav-link{
+    font-size: 16px;
+    font-weight: 400;
+    
+    
+}
+.nav-item{
+    /* border: 2px solid white; */
+   
+}
+.nav-item:hover{
+    border: 0.5px solid white;
+}
+#header-con{
+    height: 20vh;
+    background-color: rgb(21,37,56);
+}
+
+
+
+.sec-one{
+    /* border: 2px solid black; */
+    width: 55%;
+    margin: auto;
+    
+}
+.sec-one h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 300;
+    font-family: "Open Sans", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+.sec-one h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8a8a8a;
+}
+.sec-one li{
+    text-align: center;
+    
+
+    
+}
+
+footer{
+    margin: 0 !important;
+}
+
+.foot-con{
+    /* text-align: center; */
+    /* padding-left: 100px; */
+    width: 100%;
+    margin-top: 30px;
+   
+}
+.foot-con .row .card-body{
+    background-color: rgb(55,63,72);
+    border: 0;
+
+}
+.foot-con .card-title{
+    color: white;
+    font-size: 16px;
+}
+.foot-con .card{
+    border: none;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    background-color: rgb(55,63,72);
+}
+.card{
+    width:200px;
+    /* text-align: center; */
+}
+
+
+
+
+@media(max-width:1024.5px){
+    
+   
+
+}
+
+
+
+@media(max-width:768.5px){
+    .card{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+   
+
+}
+
+@media(max-width:445.5px){
+    .sec-one{
+        /* border: 2px solid black; */
+        width: 70%;
+        margin: auto;
+        
+    }
+    
+
+}

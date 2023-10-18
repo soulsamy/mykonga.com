@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+    
+}
+.body{
+    background-color:rgb(242,242,242);
+}
+header{
+    background-color: white;
+}
+
+.header-2i{
+    display: flex;
+    justify-content: space-between;
+}
+.header-2ii{
+    display: flex;
+    justify-content: space-between;
+
+} 
+.header-2ii div span a{
+    border: 1px solid dimgray;
+    padding:5px 8px;
+    font-size: 11px;
+    height: 5vh;
+    align-items: center;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+.header-2ii div  h6{
+    /* border: 1px  solid black; */
+    padding:5px;
+    height: 5vh;
+    align-items: center;
+    
+}
+.header-2ii h2{
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.accordion{
+    z-index: -.5;
+    /* border: 2px solid red; */
+    
+
+  
+   
+}
+
+.accordion-body{
+    background-color: rgb(242,242,242);
+}
+.accordion-body li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: -2.5em;
+}
+.accordion-body ul li{
+    
+}
+    
+.accordion-body li input{
+    margin-left: -2.5em;
+    
+
+}
+.accordion-body li{
+    line-height: 2em;
+}
+.mini {
+    border: 1px solid black;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.checkboxi{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+overflow-y: scroll;
+height: 50vh;
+font-size: 12px;
+margin-top: 10px;
+column-gap: 50px;
+/* border: 2px solid red; */
+align-items: center;
+padding: 5px;
+
+}
+.checkboxii{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    
+    font-size: 11px;
+    margin-top: 10px;
+    /* column-gap: 50px; */
+    /* border: 2px solid red; */
+    /* justify-content: space-between; */
+    
+    }
+    #rating li{
+        list-style-type: none;
+    }
+
+    .computers{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        margin-top: 10px;
+       cursor: pointer;
+       margin-left: 10px;
+       gap: 10px;
+       
+
+    }
+    .conn{
+        border: 1px solid white;
+        padding: 15px;
+        background-color: white;
+        width: 260px;
+        height: 80vh;
+       
+       
+    }
+    .conn:hover{
+        box-shadow: 1px 1px 5px;
+
+    }
+
+    .conn img{
+        width: 200px;
+    }
+    .conn h5{
+        
+        font-size: 14px;
+    }
+    .conn p{
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px solid beige;
+        border-right: 0;
+        border-left: 0;
+    }
+    .conn code{
+       font-size: 11px;
+    }
+
+    .sex-2-con{
+        /* border: 2px solid red; */
+        background-color: white;
+        padding: 20px;
+        width: 900px;
+        margin:30px auto;
+        margin-right: 0;
+        color:#b5b5b5;
+        
+        font-weight: 700;
+        line-height: 23px;
+        font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;;
+    }
+    .sex-2-con p{
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media(max-width:1024px){
+        .accordion{
+            display: none;
+        }
+        .conn{
+            width:260px;
+            height: 50vh;
+            
+        }
+        
+
+    }
+    @media(max-width:938.5px){
+        .sex-2-con{
+            width: 70%;
+            margin-right: 70px;
+        } 
+    }
+
+
+
+
+
+    @media(max-width:832.5px){
+        .accordion{
+            display: none;
+        }
+        .computers{
+           
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        .conn{
+            width:300px;
+            height: 50vh;
+        }
+        .header-2ii{
+            display: none;
+        }
+
+    }
+    @media(max-width:767.5px){
+        .sex-2-con{
+            width: 70%;
+            margin-right: 70px;
+        }
+    }
+
+
+
+    @media(max-width:644.5px){
+        .computers{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            width: 100%;
+        }
+        .conn{
+            display: flex;
+            width: 400px;
+            height: 40vh;
+            gap: 10px;
+            margin: auto;
+        }
+        .search-inner{
+            width: 100%;
+        }
+       
+    }
+    @media(max-width:576.5px){
+        .sex-2-con{
+            display: none;
+        }
+        .conn{
+           align-items: center;
+            height: 40vh;
+            margin-right: 15px;
+        }
+    }
